@@ -1,0 +1,189 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-image: url('https://w0.peakpx.com/wallpaper/202/33/HD-wallpaper-soothing-background-light-pastel-thumbnail.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;  
+}
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.input{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.imageContainer{
+  display: flex;
+  flex-wrap: wrap;
+  width: 480px;
+  gap: 30px;
+  justify-content: start;
+  margin-left: 30px;
+}
+
+.images{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.uploadInput{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    margin-top: 40px;
+    gap: 35px;
+}
+
+#canvas{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  right: 25%;
+}
+.uploadInputButton{
+  display: flex;
+  flex-direction: column;  
+  gap: 20px;
+  align-items: center;
+}
+
+.unsplashImageContainer{
+  display: flex;
+  flex-wrap: wrap;
+  width: 480px;
+  margin-top: 2rem;
+  gap: 50px;
+  justify-content: center;
+}
+
+.googleFontsContainer{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  width: 380px;
+  justify-content: center;
+}
+.fonts{
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  margin-top: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.canvas{
+  border: 1px solid black;
+  
+}
+.downloads{
+  margin: auto;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  /* align-items: center; */
+  justify-content: start;
+  align-items: start;
+  gap: 40px;
+}
+.DownloadedImages{
+  background: #dadcdd;
+  margin: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 2px solid rgb(92, 90, 90);
+  border-radius: 10px;
+}
+.logoAndName{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.toolbarCustom{
+  display: flex;
+  justify-content: space-between;
+}
+.stage{
+  padding: 0px;
+  background: transparent;
+  top: 0px;
+  left: 0px;
+  width: 800px;
+  height: 400px;
+  background: wheat;
+  border: 1px solid;
+  margin-top: 40px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.logoContainer{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 400px;
+  align-items: center;
+}
+.logos{
+  display: flex;
+  gap: 3rem;
+}
+.shapes{
+  padding: 1rem;
+}
+.MuiIcon-fontSizeLarge{
+  font-size: 1000px;
+}
+.konvajs-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.homepage{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  margin-top: 25vh;
+}
+
