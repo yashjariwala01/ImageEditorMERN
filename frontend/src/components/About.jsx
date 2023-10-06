@@ -6,7 +6,7 @@ const About = () => {
     <div>
         <Navbar/>
       <h1>
-        Aout component
+        About component
         </h1>
     </div>
   )
