@@ -24,19 +24,20 @@ function Login() {
     };
 
     axios
-      .post(`${process.env.REACT_APP_BACKEND_URL}/login`, loginObj)
+      .post('http://localhost:8001/login', loginObj)
       .then((res) => {
         console.log(res);
-        if (res.data.status === 200) {
-          localStorage.setItem("token", res.data.data.token);
-          window.location.href = "/homepage";
-        } else {
-          alert(res.data.message);
-        }
-      })
-      .catch((err) => {
-        alert(err);
+      //   if (res.data.status === 200) {
+      //     localStorage.setItem("token", res.data.data.token);
+      //     window.location.href = "/homepage";
+      //   } else {
+      //     alert(res.data.message);
+      //   }
+      // })
+      // .catch((err) => {
+      //   alert(err);
       });
+      console.log(`${process.env.REACT_APP_BACKEND_URL}/login`)
   };
 
   return (

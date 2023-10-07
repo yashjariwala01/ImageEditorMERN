@@ -19,8 +19,8 @@ const Downloads = require('./model/Downloaded')
 const User = require('./model/UserProfile')
 const app = express();
 
-app.use(cors());
 app.use(express.json());
+app.use(cors());
 app.use(express.static('public'))
 const PORT = process.env.PORT || 8001;
 
