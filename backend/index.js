@@ -76,7 +76,7 @@ const storage = multer.diskStorage({
 app.get('/download/:filename', async (req, res) => {
   const filename = req.params.filename;
   console.log(filename);
- try { 
+ try {
    const imageUrl = `http://localhost:8001/Images/${filename}`;
    const varfilename = Math.floor(Math.random()*10000)
 

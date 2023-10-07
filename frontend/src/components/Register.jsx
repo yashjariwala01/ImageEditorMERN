@@ -27,7 +27,7 @@ function Register() {
     
 
     axios
-    // .post('http://localhost:8001/register',userObj)
+    
     .post(`${process.env.REACT_APP_BACKEND_URL}/register`,userObj)
       .then((res) => {
         console.log(res);
