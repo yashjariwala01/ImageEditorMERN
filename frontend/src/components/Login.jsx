@@ -24,7 +24,7 @@ function Login() {
     };
 
     axios
-      .post(`http://localhost:8001/login`, loginObj)
+      .post(`${process.env.REACT_APP_BACKEND_URL}/login`, loginObj)
       .then((res) => {
         console.log(res);
         if (res.data.status === 200) {
