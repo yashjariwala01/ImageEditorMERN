@@ -7,7 +7,7 @@ const ShowDownloads = () => {
     const [error,setError ] = useState(true);
 
     useEffect(()=>{
-        axios.get('http://localhost:8001/getDownloadedImages')
+        axios.get(`${process.env.REACT_APP_BACKEND_URL}/getDownloadedImages`)
         .then(res=>{
             console.log(res.data);
             setError(false);
