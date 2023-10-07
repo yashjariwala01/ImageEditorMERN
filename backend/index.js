@@ -114,7 +114,7 @@ app.post('/save', async(req,res)=>{
 })
 
 app.get('/getDownloadedImages',async(req,res)=>{
-
+  console.log('hello world')
   try{
     const images = await Downloads.find();
     res.status(200).json(images);

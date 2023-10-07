@@ -7,7 +7,7 @@ const ShowDownloads = () => {
     const [error,setError ] = useState(true);
 
     useEffect(()=>{
-        axios.get(`${process.env.REACT_APP_BACKEND_URL}/getDownloadedImages`)
+        axios.get("https://deltaimageeditorappmern.onrender.com/getDownloadedImages")
         .then(res=>{
             console.log(res.data);
             setError(false);

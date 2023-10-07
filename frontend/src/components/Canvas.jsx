@@ -127,7 +127,7 @@ const Canvas = () => {
     link.click();
     console.log(link);
     
-    axios.post(`${process.env.REACT_APP_BACKEND_URL}/save`,{
+    axios.post("https://deltaimageeditorappmern.onrender.com/save",{
       imageName,
       url : dataURL,
     })
@@ -213,7 +213,7 @@ const handleUploadClick = (e) => {
   const formData = new FormData();
   formData.append("file", file);
   axios
-    .post(`${process.env.REACT_APP_BACKEND_URL}/upload`, formData)
+    .post("https://deltaimageeditorappmern.onrender.com/upload", formData)
     .then((res) => console.log(res))
     .catch((err) => console.log(err));
 };
@@ -226,7 +226,7 @@ const handleUploadClick = (e) => {
 
     function showUploads() {
       axios
-        .get(`${process.env.REACT_APP_BACKEND_URL}/getImages`)
+        .get("https://deltaimageeditorappmern.onrender.com/getImages")
         .then((res) => {
           setImages(res.data);          
         })
@@ -246,7 +246,7 @@ const handleUploadClick = (e) => {
         axios
           .get(`https://www.googleapis.com/webfonts/v1/webfonts`,{
             params:{
-              key: process.env.REACT_APP_GOOGLE_FONTS_API_KEY,
+              key: 'AIzaSyBA2NS-oqn7rGgE-khYM2r_smZEfs6FbZ8',
             }
           })
           .then((res) => {
@@ -268,7 +268,7 @@ const handleUploadClick = (e) => {
         function showElements(){
             axios.get(`https://api.unsplash.com/photos`,{
                 params:{
-                    client_id : process.env.REACT_APP_UNSPLASH_ACCESS_API_KEY,
+                    client_id : 'YpEA8jPuIw6x2diTE8l0faRKqYIL_IhstjhdLeyDmt4',
                 }
             })
             .then(res =>{
@@ -340,8 +340,8 @@ const handleUploadClick = (e) => {
                 images.map((image) => (
                   <div className="images">
                     <img 
-                    onClick={()=> handleAddImageToCanvas(`${process.env.REACT_APP_BACKEND_URL}/Images/` + image.Image)}  
-                      src={`${process.env.REACT_APP_BACKEND_URL}/Images/` + image.Image}
+                    onClick={()=> handleAddImageToCanvas("https://deltaimageeditorappmern.onrender.com/Images/" + image.Image)}  
+                      src={"https://deltaimageeditorappmern.onrender.com/Images/" + image.Image}
                       alt=""
                       width={120}
                       height={120}

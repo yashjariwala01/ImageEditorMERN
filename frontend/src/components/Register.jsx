@@ -28,7 +28,7 @@ function Register() {
 
     axios
     
-    .post(`${process.env.REACT_APP_BACKEND_URL}/register`,userObj)
+    .post("https://deltaimageeditorappmern.onrender.com/register",userObj)
       .then((res) => {
         console.log(res);
         if (res.data.status === 201) {
